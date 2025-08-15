@@ -30,7 +30,10 @@ sudo dnf install ncurses-devel
 
 ### Compilation
 ```bash
-gcc -O2 -Wall -Wextra main.c -lncurses -o tetris
+mkdir build
+cd build
+cmake ..
+cmake --build .
 ```
 
 ## Controls
